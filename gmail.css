@@ -8,6 +8,8 @@ body {
   height: 100vh;
 }
 
+/* MAIN LAYOUT */
+
 .main-container {
   display: grid;
   grid-template:
@@ -58,4 +60,97 @@ body {
       "left-inbox-panel main right-quick-settings " 40rem
       /16rem 12rem 1fr;
   }
+}
+
+/* LEFT INBOX PANEL INTERNAL */
+
+.left-inbox-panel__inner-content {
+  display: grid;
+  grid-template:
+    "compose" 4rem
+    "inbox" 2rem
+    "starred" 2rem
+    "snoozed" 2rem
+    "important" 2rem
+    "sent" 2rem
+    "team" 2rem
+    "new-RFP" 2rem
+    "projects" 2rem
+    "personal" 2rem
+    "more" 2rem /
+    14rem;
+
+  color: whitesmoke;
+  text-align: center;
+}
+
+.inner-content__compose {
+  grid-area: compose;
+
+  background-color: aliceblue;
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 1rem;
+}
+
+.inner-content__inbox {
+  background-color: rgb(42, 78, 78);
+  grid-area: inbox;
+  margin: 1rem;
+}
+.inner-content__starred {
+  background-color: rgb(255, 30, 0);
+  grid-area: starred;
+  margin: 1rem;
+}
+.inner-content__snoozeed {
+  background-color: rgb(29, 70, 70);
+  grid-area: snoozed;
+
+  margin: 1rem;
+}
+.inner-content__important {
+  background-color: rgb(0, 26, 255);
+  grid-area: important;
+
+  margin: 1rem;
+}
+.inner-content__sent {
+  background-color: rgb(195, 0, 255);
+  grid-area: sent;
+
+  margin: 1rem;
+}
+.inner-content__team {
+  background-color: rgb(30, 255, 0);
+  grid-area: team;
+
+  margin: 1rem;
+}
+.inner-content__new-RFP {
+  background-color: rgb(255, 157, 0);
+  grid-area: new-RFP;
+
+  margin: 1rem;
+}
+.inner-content__projects {
+  background-color: rgb(255, 0, 170);
+  grid-area: projects;
+
+  margin: 1rem;
+}
+.inner-content__personal {
+  background-color: rgb(255, 0, 0);
+  grid-area: personal;
+
+  margin: 1rem;
+}
+.inner-content__more {
+  background-color: rgb(17, 0, 255);
+  grid-area: more;
+
+  margin: 1rem;
 }
