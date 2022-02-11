@@ -36,3 +36,26 @@ body {
   background-color: rgb(165, 42, 114);
   grid-area: right-icons;
 }
+
+@media screen and (max-width: 781px) {
+  .main-container__right-icons {
+    background-color: aqua;
+  }
+  .main-container {
+    display: grid;
+    grid-template:
+      "navbar-top navbar-top navbar-top navbar-top " 6rem
+      "left-inbox-panel main right-quick-settings right-icons" 40rem
+      /16rem 12rem 8fr 1fr;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main-container {
+    display: grid;
+    grid-template:
+      "navbar-top navbar-top navbar-top  " 6rem
+      "left-inbox-panel main right-quick-settings " 40rem
+      /16rem 12rem 1fr;
+  }
+}
