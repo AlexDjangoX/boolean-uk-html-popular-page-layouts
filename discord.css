@@ -1,0 +1,44 @@
+* {
+  margin: 2px;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-container {
+  display: grid;
+  grid-template:
+    "side-menu header header" 4rem
+    "side-menu channels messages" 35rem
+    "side-menu channels replies" 10rem
+    / 4rem 8rem 1fr;
+}
+
+.main-container__side-menu {
+  background-color: rgba(91, 91, 194, 0.603);
+
+  grid-area: side-menu;
+}
+.main-container__header {
+  background-color: rgb(0, 255, 136);
+
+  grid-area: header;
+}
+.main-container__channels {
+  background-color: rgb(0, 255, 200);
+
+  grid-area: channels;
+}
+.main-container__new-messages {
+  background-color: rgb(255, 0, 179);
+
+  grid-area: messages;
+}
+.main-container__replies {
+  background-color: rgb(255, 0, 85);
+
+  grid-area: replies;
+}
