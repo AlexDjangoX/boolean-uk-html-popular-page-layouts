@@ -10,9 +10,9 @@ body {
 .main-container {
   display: grid;
   grid-template:
-    "navbar-top navbar-top navbar-top" 5rem
-    "left-profile-side-bar main right-news-side-bar" 40rem
-    /22rem 1fr 22rem;
+    "navbar-top navbar-top navbar-top navbar-top navbar-top" 5rem
+    ". left-profile-side-bar main right-news-side-bar ." 40rem
+    /1fr 1fr 2fr 1fr 1fr;
 }
 
 .main-container__navbar-top {
